@@ -26,7 +26,7 @@
   },
   "manifest": {
     "host_permissions": [
-      "https://*/*"
+      "https://secure.lloydsbank.co.uk/*"
     ]
   }
 }
