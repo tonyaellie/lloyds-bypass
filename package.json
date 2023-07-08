@@ -1,8 +1,8 @@
 {
-  "name": "simple-security-stripper",
-  "displayName": "S3",
+  "name": "lloyds-bypass",
+  "displayName": "Lloyds Memorable Info Bypass",
   "version": "0.0.1",
-  "description": "S3 (Simple Security Stripper) - the perfect tool to remove security from your bank account!",
+  "description": "Bypasses the memorable info page on Lloyds online banking.",
   "author": "tonya",
   "scripts": {
     "dev": "plasmo dev",
