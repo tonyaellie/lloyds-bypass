@@ -1,8 +1,8 @@
 import type { PlasmoCSConfig } from 'plasmo';
 
+import { Storage } from '@plasmohq/storage';
 
-
-
+const storage = new Storage();
 
 export const config = {
   matches: [
@@ -11,13 +11,14 @@ export const config = {
   world: 'MAIN',
 } satisfies PlasmoCSConfig;
 
-window.addEventListener('load', () => {
+window.addEventListener('load', async () => {
   if (window.location.href !== config.matches[0]) return;
 
-  const secret = 'REPLACEME';
+  console.log('Loaded, attempting to get secret');
+  const secret = await storage.get('lloyds-info');
 
-  if (!secret || secret === 'REPLACEME') {
-    throw new Error('No secret provided');
+  if (!secret) {
+    alert('Memorable information not set, please set it in the extension');
   }
 
   console.log(
