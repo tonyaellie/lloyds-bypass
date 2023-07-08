@@ -55,6 +55,25 @@ window.addEventListener('load', () => {
         selects[i].value = `&nbsp;${secret[val].toLowerCase()}`;
         console.log(`Set select ${i} to ${secret[val]}`);
       });
+
+      const element = document.getElementById(
+        'frmentermemorableinformation1:btnContinue'
+      );
+
+      // Get the position of the element
+      const rect = element.getBoundingClientRect();
+      const x = rect.left + rect.width / 2;
+      const y = rect.top + rect.height / 2;
+
+      // Create and dispatch a click event
+      const clickEvent = new MouseEvent('click', {
+        view: window,
+        bubbles: true,
+        cancelable: true,
+        clientX: x,
+        clientY: y,
+      });
+      element.dispatchEvent(clickEvent);
     }
   }, 1000);
 });
