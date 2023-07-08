@@ -1,5 +1,9 @@
 import type { PlasmoCSConfig } from 'plasmo';
 
+
+
+
+
 export const config = {
   matches: [
     'https://secure.lloydsbank.co.uk/personal/a/logon/entermemorableinformation.jsp',
@@ -51,12 +55,6 @@ window.addEventListener('load', () => {
         selects[i].value = `&nbsp;${secret[val].toLowerCase()}`;
         console.log(`Set select ${i} to ${secret[val]}`);
       });
-
-      const submit = document.getElementById(
-        'frmentermemorableinformation1:btnContinue'
-      ) as HTMLButtonElement;
-
-      submit.click();
     }
   }, 1000);
 });
