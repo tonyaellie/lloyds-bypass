@@ -1,20 +1,21 @@
-import { useState } from "react"
+import { useState } from 'react';
 
 function IndexPopup() {
-  const [data, setData] = useState("")
+  const [data, setData] = useState('');
 
   return (
     <div
       style={{
-        display: "flex",
-        flexDirection: "column",
-        padding: 16
-      }}>
+        display: 'flex',
+        flexDirection: 'column',
+        padding: 16,
+      }}
+    >
       <h2>
-        Welcome to your{" "}
+        Welcome to your{' '}
         <a href="https://www.plasmo.com" target="_blank">
-          Plasmo
-        </a>{" "}
+          gay
+        </a>{' '}
         Extension!
       </h2>
       <input onChange={(e) => setData(e.target.value)} value={data} />
@@ -22,7 +23,7 @@ function IndexPopup() {
         View Docs
       </a>
     </div>
-  )
+  );
 }
 
-export default IndexPopup
+export default IndexPopup;
