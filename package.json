@@ -1,7 +1,7 @@
 {
   "name": "lloyds-bypass",
   "displayName": "Lloyds Memorable Info Bypass",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Bypasses the memorable info page on Lloyds online banking.",
   "author": "tonya",
   "scripts": {
